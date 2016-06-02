@@ -1,0 +1,11 @@
+0.  Pneumonoultramicroscopicsilicovolcanoconiosis refers to a lung disease that is otherwise known as silicosis.
+1.  Get resource usage measures for the first argument.
+2.  There are 16 members.
+3.  rusage is a large struct, so better to pass by a pointer rather than pass the entire struct.
+4.  Main is reading words in file by reading every character of every word. It adds characters to a word until the null character. It will also ignore the word if it has numbers in it. 
+5.  Accessing every character via fgetc allows us to ignore the word if it has numbers. Using scanf to get entire words at a time won't allow us to do that.
+6.  Because the speller prints misspelled words, you do not want us to change the actual string it passes. 
+7.  Hash table. I used linked list inside my nodes.
+8.  It took almost a second to check the austinpowers text.
+9.  I changed the hash table size from 50 to 500. And it was much faster.
+10. The hash table design is a bottle neck, you lose time at checking if each bucket is too large or use a lot of memory if you have too many buckets.
